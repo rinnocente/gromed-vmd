@@ -21,7 +21,7 @@ cd ~/gromed-vmd
 wget https://raw.githubusercontent.com/rinnocente/gromed-vmd/master/Dockerfile
 cp ~/Download/vmd-1.9.3.bin.LINUXAMD64-CUDA8-OptiX4-OSPRay111p1.opengl.tar.gz  .
 docker build -t gromed-vmd .
-CONT=`docker run -itd gromed-vmd`
+CONT=`docker run -P -itd gromed-vmd`
 PORT=`docker port $CONT|sed -e 's/.*://'`
 ssh -X -p $PORT gromed@127.0.0.1
 ```
