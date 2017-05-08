@@ -1,13 +1,14 @@
 #
 FROM rinnocente/gromed-general
 #
-# Docker pull the rinnocente/gromacs-general image
+# Docker pull the rinnocente/gromed-general image
 #
 # Make a subdirectory named gromed-vmd
 #
 # Register at http://www.ks.uiuc.edu/Development/Download/download.cgi
 #    download from there the LINUX_64 OpenGL, CUDA, OptiX, OSPRay code 
 #    http://www.ks.uiuc.edu/Development/Download/download.cgi?UserID=&AccessCode=&ArchiveID=1475
+#    and put the tarball in the gromed-vmd directory
 # 
 # Put this Dockerfile in the gromed-vmd directory : 
 #    wget https://raw.githubusercontent.com/rinnocente/gromed-vmd/master/Dockerfile
