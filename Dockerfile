@@ -1,7 +1,7 @@
 #
 FROM rinnocente/gromed-general
 #
-# Docker pulled the rinnocente/gromacs-general image
+# Docker pull the rinnocente/gromacs-general image
 #
 # Make a subdirectory named gromed-vmd
 #
@@ -11,6 +11,13 @@ FROM rinnocente/gromed-general
 # 
 # Put this Dockerfile in the gromed-vmd directory : 
 #    wget https://raw.githubusercontent.com/rinnocente/gromed-vmd/master/Dockerfile
+# 
+# Run docker build inside the gromed-vmd directory :
+#   docker build -t gromed-vmd .
+#
+# Now running the image gromed-vmd 
+# and ssh -X -p .. gromed@127.0.0.1
+# will give you a container with vmd
 #
 COPY  vmd-1.9.3.bin.LINUXAMD64-CUDA8-OptiX4-OSPRay111p1.opengl.tar.gz /home/gromed/
 RUN   tar xzf vmd-1.9.3.bin.LINUXAMD64-CUDA8-OptiX4-OSPRay111p1.opengl.tar.gz \
