@@ -3,7 +3,7 @@ gromed + vmd
 
 vmd = Visual Molecular Dynamics see [Uiuc VMD](http://www.ks.uiuc.edu/Research/vmd/)
 
-**The best way to run all you need GROMACS + PLUMED + VMD.**
+**The best way to run all you need GROMACS + PLUMED + VMD in some clicks.**
 
 The vmd license imposes some restrictions on the distribution of the application.
 
@@ -16,6 +16,9 @@ It is not legal to include vmd in a docker container.
 Therefore we prepared a small docker hat for the gromed docker
 that easily permits to include vmd, provided that users download by
 themself the vmd code base.
+
+You need docker installed of course.
+Copy the following lines of code with a left button click.
 
 ```
 mkdir ~/gromed-vmd
