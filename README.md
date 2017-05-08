@@ -3,6 +3,8 @@ gromed + vmd
 
 vmd = Visual Molecular Dynamics see [Uiuc VMD](http://www.ks.uiuc.edu/Research/vmd/)
 
+**The best way to run all you need GROMACS + PLUMED + VMD.**
+
 The vmd license imposes some restrictions on the distribution of the application.
 
 Private people can not distribute the code, organizations only to members. 
