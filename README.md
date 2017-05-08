@@ -25,4 +25,3 @@ CONT=`docker run -itd gromed-vmd`
 PORT=`docker port $CONT|sed -e 's/.*://'`
 ssh -X -p $PORT gromed@127.0.0.1
 ```
-
