@@ -19,7 +19,7 @@ themself the vmd code base.
 mkdir ~/gromed-vmd
 cd ~/gromed-vmd
 wget https://raw.githubusercontent.com/rinnocente/gromed-vmd/master/Dockerfile
-cp vmd-1.9.3.bin.LINUXAMD64
+cp vmd-1.9.3.bin.LINUXAMD64-CUDA8-OptiX4-OSPRay111p1.opengl.tar.gz
 docker build -t gromed-vmd .
 CONT=`docker run -itd gromed-vmd`
 PORT=`docker port $CONT|sed -e 's/.*://'`
