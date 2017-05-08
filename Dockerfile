@@ -8,7 +8,8 @@ FROM rinnocente/gromed-general
 # Register at http://www.ks.uiuc.edu/Development/Download/download.cgi
 #    download from there the LINUX_64 OpenGL, CUDA, OptiX, OSPRay code 
 #    http://www.ks.uiuc.edu/Development/Download/download.cgi?UserID=&AccessCode=&ArchiveID=1475
-#    and put the tarball in the gromed-vmd directory
+#    and put the tarball vmd-1.9.3.bin.LINUXAMD64-CUDA8-OptiX4-OSPRay111p1.opengl.tar.gz
+#    in the gromed-vmd directory
 # 
 # Put this Dockerfile in the gromed-vmd directory : 
 #    wget https://raw.githubusercontent.com/rinnocente/gromed-vmd/master/Dockerfile
