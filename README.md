@@ -15,3 +15,14 @@ Therefore we prepared a small docker hat for the gromed docker
 that easily permits to include vmd, provided that users download by
 themself the vmd code base.
 
+```
+mkdir ~/gromed-vmd
+cd ~/gormed-vmd
+wget https://raw.githubusercontent.com/rinnocente/gromed-vmd/master/Dockerfile
+cp vmd-1.9.3.bin.LINUXAMD64
+docker build -t gromed-vmd .
+CONT=`docker run -itd gromed-vmd`
+PORT=`docker port $CONT|sed -e 's/.*://'`
+ssh -X -p $PORT gromed@127.0.0.1
+```
+
