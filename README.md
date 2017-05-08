@@ -1,5 +1,6 @@
 # gromed-vmd
 gromed + vmd
+
 vmd license for its code imposes some restrictions on its distribution.
 Private people can not distribute the code,
 organizations only to members. You need to register to download the code.
