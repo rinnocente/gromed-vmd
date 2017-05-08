@@ -17,7 +17,7 @@ themself the vmd code base.
 
 ```
 mkdir ~/gromed-vmd
-cd ~/gormed-vmd
+cd ~/gromed-vmd
 wget https://raw.githubusercontent.com/rinnocente/gromed-vmd/master/Dockerfile
 cp vmd-1.9.3.bin.LINUXAMD64
 docker build -t gromed-vmd .
