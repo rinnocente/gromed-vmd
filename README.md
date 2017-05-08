@@ -18,7 +18,12 @@ that easily permits to include vmd, provided that users download by
 themself the vmd code base.
 
 You need docker installed of course.
-Copy the following lines of code with a left button click.
+Copy the following lines of code hovering them with the mouse left button pressed,
+press right mouse button and choose Copy.
+Go over a bash window, press right mouse button and choose Paste.
+You will find youserlf inside the container and from where
+start the vmd app. Enjoy !
+
 
 ```
 mkdir ~/gromed-vmd
