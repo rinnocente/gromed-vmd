@@ -8,10 +8,9 @@ FROM rinnocente/gromed
 # Register at http://www.ks.uiuc.edu/Development/Download/download.cgi
 #    download from there the LINUX_64 OpenGL, CUDA, OptiX, OSPRay code 
 #    http://www.ks.uiuc.edu/Development/Download/download.cgi?UserID=&AccessCode=&ArchiveID=1475
-#    and put the tarball vmd-1.9.3.bin.LINUXAMD64-CUDA8-OptiX4-OSPRay111p1.opengl.tar.gz
-#    in the gromed-vmd directory
+#    in the standard ~/Downloads/ directory.
 # 
-# Put this Dockerfile in the gromed-vmd directory : 
+# Then :
 #    git clone  https://github.com/rinnocente/gromed-vmd.git
 #    cd gromed-vmd
 #    bash do-it-all.sh
@@ -26,16 +25,14 @@ RUN   tar xzf vmd-1.9.3.bin.LINUXAMD64-CUDA8-OptiX4-OSPRay111p1.opengl.tar.gz \
       && cd vmd-1.9.3 \
       && ./configure \
       && cd src; make install
-
 #
 # change owner to gromed:gromed
 #
 RUN	chown -R gromed:gromed /home/gromed
-
+#
 WORKDIR /home/gromed
-
+#
 EXPOSE 22
-
 #
 # the container can be now reached via ssh
 CMD [ "/usr/sbin/sshd","-D" ]
