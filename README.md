@@ -25,5 +25,6 @@ in the standard ```~/Downloads/``` directory.
 ```
 git clone https://github.com/rinnocente/gromed-vmd.git
 cd gromed-vmd
+cp ~/Downloads/vmd-1.9.3.bin.LINUXAMD64-CUDA8-OptiX4-OSPRay111p1.opengl.tar.gz .
 bash do-it-all.sh
 ```
