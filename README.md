@@ -1,4 +1,4 @@
-# gromed-vmd (GRO[macs] + [plu]MED + VMD) in a single container
+# gromed-vmd (GRO[macs] + [plu]MED + VMD) 
 (GRO[macs] + [plu]MED + VMD) in a single container
 
 
