@@ -19,7 +19,8 @@ themself the vmd code base.
 
 You need docker installed of course.
 Go with the browser to http://www.ks.uiuc.edu/Development/Download/download.cgi , register yourself
-and download the binary tarball vmd-1.9.3.bin.LINUXAMD64 in the standard ```~/Downloads/``` directory.
+and download the binary tarball ```vmd-1.9.3.bin.LINUXAMD64-CUDA8-OptiX4-OSPRay111p1.opengl.tar.gz```
+in the standard ```~/Downloads/``` directory.
 
 ```
 git clone https://github.com/rinnocente/gromed-vmd.git
