@@ -1,5 +1,5 @@
 #
-FROM rinnocente/gromed-general
+FROM rinnocente/gromed
 #
 # Docker pull the rinnocente/gromed-general image
 #
@@ -12,10 +12,10 @@ FROM rinnocente/gromed-general
 #    in the gromed-vmd directory
 # 
 # Put this Dockerfile in the gromed-vmd directory : 
-#    wget https://raw.githubusercontent.com/rinnocente/gromed-vmd/master/Dockerfile
+#    git clone  https://github.com/rinnocente/gromed-vmd.git
+#    cd gromed-vmd
+#    bash do-it-all.sh
 # 
-# Run docker build inside the gromed-vmd directory :
-#   docker build -t gromed-vmd .
 #
 # Now running the image gromed-vmd 
 # and ssh -X -p .. gromed@127.0.0.1
