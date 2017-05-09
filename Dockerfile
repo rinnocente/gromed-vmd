@@ -1,7 +1,7 @@
 #
 FROM rinnocente/gromed
 #
-# Docker pull the rinnocente/gromed-general image
+# Docker pull the rinnocente/gromed image
 #
 # Make a subdirectory named gromed-vmd
 #
