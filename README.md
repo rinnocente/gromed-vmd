@@ -24,6 +24,6 @@ in the standard ```~/Downloads/``` directory.
 
 ```
 git clone https://github.com/rinnocente/gromed-vmd.git
-cd ~/gromed-vmd
+cd gromed-vmd
 bash do-it-all.sh
 ```
