@@ -24,7 +24,8 @@ COPY  vmd-1.9.3.bin.LINUXAMD64-CUDA8-OptiX4-OSPRay111p1.opengl.tar.gz /home/grom
 RUN   tar xzf vmd-1.9.3.bin.LINUXAMD64-CUDA8-OptiX4-OSPRay111p1.opengl.tar.gz \
       && cd vmd-1.9.3 \
       && ./configure \
-      && cd src; make install
+      && cd src; make install \
+      && cd ..; mv vmd-1.9.3.bin.LINUXAMD64-CUDA8-OptiX4-OSPRay111p1.opengl.tar.gz downloads/
 #
 # change owner to gromed:gromed
 #
