@@ -3,7 +3,6 @@ FROM rinnocente/gromed
 #
 # Docker pull the rinnocente/gromed image
 #
-# Make a subdirectory named gromed-vmd
 #
 # Register at http://www.ks.uiuc.edu/Development/Download/download.cgi
 #    download from there the LINUX_64 OpenGL, CUDA, OptiX, OSPRay code 
