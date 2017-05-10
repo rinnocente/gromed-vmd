@@ -15,4 +15,4 @@ then
   ssh -X -p $PORT gromed@127.0.0.1
 fi
 echo "When you want you can start the container with : (initial password is mammamia )"
-echo "  CONT=`docker run -P -itd gromed-vmd`;PORT=`docker port $CONT|sed -e 's/.*://'`;ssh -X -p $PORT gromed@127.0.0.1 
+echo "  CONT=`docker run -P -itd gromed-vmd`;PORT=`docker port $CONT|sed -e 's/.*://'`;ssh -X -p $PORT gromed@127.0.0.1"
