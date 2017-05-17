@@ -34,7 +34,8 @@ bash do-it-all.sh
 The standard method to log into the container with `ssh -X ` works but is not
 efficient. Another way it is possible on a Unix host with some complications.
 Instead of using ssh to multiplex X11 on the same channel we map
-directly the X11 socket of the host on the container :
+directly the X11 socket of the host on the container 
+(the ubuntu image needs the `libxext-dev` library) :
 ```
-docker run -ti  -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix  gromed /bin/bash
+docker run -ti  -e DISPLAY=$DISPLAY -v /etc/localtime:/etc/localtime:ro -v /tmp/.X11-unix:/tmp/.X11-unix:ro  gromed /bin/bash
 ```
