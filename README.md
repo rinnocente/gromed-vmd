@@ -37,5 +37,5 @@ Instead of using ssh to multiplex X11 on the same channel we map
 directly the X11 socket of the host on the container 
 (the ubuntu image needs the `libxext-dev` library) :
 ```
-docker run -ti  -e DISPLAY=$DISPLAY -v /etc/localtime:/etc/localtime:ro -v /tmp/.X11-unix:/tmp/.X11-unix:ro  gromed /bin/bash
+docker run -ti  -e DISPLAY=$DISPLAY -v /etc/localtime:/etc/localtime:ro -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v /dev/dri/card0:/dev/dri/card0:ro   gromed /bin/bash
 ```
