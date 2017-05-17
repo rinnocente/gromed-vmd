@@ -28,9 +28,11 @@ cd gromed-vmd
 cp ~/Downloads/vmd-1.9.3.bin.LINUXAMD64-CUDA8-OptiX4-OSPRay111p1.opengl.tar.gz .
 bash do-it-all.sh
 ```
-## Efficient use of X11 from a docker container
+
+## Efficient use of X11 from a "LOCAL" docker container
+
 The standard method to log into the container with `ssh -X ` works but is not
-efficient. Another way it is possible with some complications.
+efficient. Another way it is possible on a Unix host with some complications.
 Instead of using ssh to multiplex X11 on the same channel we map
 directly the X11 socket of the host on the container :
 ```
