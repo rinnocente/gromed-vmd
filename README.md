@@ -8,8 +8,8 @@ vmd = Visual Molecular Dynamics see [Uiuc VMD](http://www.ks.uiuc.edu/Research/v
 
 The vmd license imposes some restrictions on the distribution of the application.
 
-Apps required as private people can not be distributed, apps required as organizations 
-can be distributed only to members. 
+If the App is downloaded as a private you can not  distribute it , if the app is
+downloaded as a organization can be distributed only to members. 
 You need to register to download the code.
 It is not legal to include vmd in a docker container.
 
