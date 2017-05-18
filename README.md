@@ -8,8 +8,8 @@ vmd = Visual Molecular Dynamics see [Uiuc VMD](http://www.ks.uiuc.edu/Research/v
 
 The vmd license imposes some restrictions on the distribution of the application.
 
-If the App is downloaded as a private you can not  distribute it , if the app is
-downloaded as a organization can be distributed only to members. 
+If the app is downloaded as a private person you can not  distribute it , if the app is
+downloaded as an organization it can be distributed only to members. 
 You need to register to download the code.
 It is not legal to include vmd in a docker container.
 
@@ -20,7 +20,7 @@ themself the vmd code base.
 You need docker installed of course.
 Go with the browser to http://www.ks.uiuc.edu/Development/Download/download.cgi , register yourself
 and download the binary tarball ```vmd-1.9.3.bin.LINUXAMD64-CUDA8-OptiX4-OSPRay111p1.opengl.tar.gz```
-in the standard ```~/Downloads/``` directory.
+in the standard ```~/Downloads/``` directory. Then :
 
 ```
 git clone https://github.com/rinnocente/gromed-vmd.git
@@ -31,9 +31,9 @@ bash do-it-all.sh
 
 ## Efficient use of X11 from a "LOCAL" docker container
 
-The standard method to log into the container with `ssh -X ` works but is not
-efficient. Another way it is possible on a Unix host with some complications.
-Instead of using ssh to multiplex X11 on the same channel we map
+The standard method of logging into the container with `ssh -X ` works but is not
+efficient. Another way it is possible, but with some complications, if you work on a Unix host .
+Instead of using ssh to multiplex X11 on the same channel you can map
 directly the X11 socket of the host on the container 
 (the ubuntu image needs the `libxext-dev` library) :
 ```
